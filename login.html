@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Entrar • Ficha Musical</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./scripts/tailwindcss/config.js"></script>
+  </head>
+
+  <body
+    class="min-h-screen bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans"
+  >
+    <!-- Wrapper -->
+    <div class="flex items-center justify-center min-h-screen px-4">
+      <!-- Card -->
+      <section
+        class="w-full max-w-md bg-surface-light dark:bg-surface-dark rounded-xl shadow-md px-4"
+        aria-labelledby="login-title"
+      >
+        <!-- Título -->
+        <header class="m-4 text-center">
+          <h1
+            id="login-title"
+            class="text-2xl font-semibold"
+          >
+            Ficha Musical - Entrar
+          </h1>
+        </header>
+
+        <!-- Formulário -->
+        <form class="space-y-4" novalidate>
+          <div>
+            <label for="email" class="block text-sm font-medium mb-1">
+              E-mail
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="email@exemplo.com"
+              class="w-full border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-2 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
+
+          <div>
+            <label for="password" class="block text-sm font-medium mb-1">
+              Senha
+            </label>
+            <input
+              id="password"
+              name="password"
+              type="password"
+              autocomplete="current-password"
+              placeholder="••••••••"
+              class="w-full border border-slate-300 dark:border-slate-700 rounded-lg px-4 py-2 bg-white dark:bg-slate-900 focus:outline-none focus:ring-2 focus:ring-primary"
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="w-full mt-2 bg-primary text-white rounded-lg py-2.5 font-medium hover:opacity-90 transition"
+          >
+            Entrar
+          </button>
+        </form>
+
+        <!-- Divisor -->
+        <div class="my-2 flex items-center gap-3">
+          <div class="flex-1 h-px bg-slate-300 dark:bg-slate-700"></div>
+          <span class="text-sm text-slate-500 dark:text-slate-400">ou</span>
+          <div class="flex-1 h-px bg-slate-300 dark:bg-slate-700"></div>
+        </div>
+
+        <!-- Google -->
+        <button
+          type="button"
+          class="w-full border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-900 py-2.5 rounded-lg flex items-center justify-center gap-2 text-sm font-medium hover:bg-slate-50 dark:hover:bg-slate-800 transition shadow-sm"
+        >
+          <img
+            src="https://www.svgrepo.com/show/355037/google.svg"
+            alt="Google"
+            class="w-5 h-5"
+          />
+          Entrar com Google
+        </button>
+
+        <!-- Cadastro -->
+        <p class="text-sm text-center m-4 text-slate-600 dark:text-slate-400">
+          Ainda não tem conta?
+          <a href="register.html" class="text-primary font-medium hover:underline">
+            Criar conta
+          </a>
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
